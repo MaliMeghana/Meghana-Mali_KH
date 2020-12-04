@@ -25,7 +25,7 @@ insert into Books values(101,'Let us C','Denis Ritchie',450,'System')
 ,(104,'PL SQL-Ref','ScottUrman',750,'Database');
 
 alter table Books add PRIMARY KEY (Book_No);
-update Books set Cost = 300 where Book_no = 103;
+update Books set Cost = 300,category='RDBMS' where Book_no = 103;
 
 drop table Issue;
 create table Issue(Lib_Issue_Id numeric(10),Book_No numeric(6)
